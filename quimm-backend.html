@@ -1,0 +1,21 @@
+<head>
+  <title>Quimm Backend</title>
+</head>
+
+<body>
+    {{> sucesos}}
+</body>
+
+<template name="sucesos">
+  <h3>Sucesos</h3>
+  <ul>
+    {{#each sucesos}}
+      <li>Nombre: {{nombre}}</li>
+      <li>Descripción: {{descripcion}}</li>
+      <li>Latitud: {{latitud}}</li>
+      <li>Longitud: {{longitud}}</li>
+      <li>Categoría: {{categoria}}</li>
+      <hr/>
+    {{/each}}
+  </ul>
+</template>
