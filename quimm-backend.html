@@ -12,9 +12,9 @@
     {{#each sucesos}}
       <li>Nombre: {{nombre}}</li>
       <li>Descripción: {{descripcion}}</li>
-      <li>Latitud: {{latitud}}</li>
-      <li>Longitud: {{longitud}}</li>
+      <li>Ubicación [lng, lat]: {{ubicacion.coordinates}}</li>
       <li>Categoría: {{categoria}}</li>
+      <li>Confirmación: {{confirmacion}}</li>
       <hr/>
     {{/each}}
   </ul>
